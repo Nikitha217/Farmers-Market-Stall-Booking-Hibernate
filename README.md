@@ -1,145 +1,113 @@
-# Farmers Market Stall Booking (Java + JDBC + OOP)
+# 🌾 Local Farmers' Market Console Application (Hibernate)
+
+A Java console-based application developed using **Hibernate ORM** to manage vendors, stall bookings, and sales summaries in a local farmers' market.
+
+This project demonstrates:
+- Object-Oriented Programming (OOP)
+- Hibernate ORM
+- Layered Architecture (Entity, DAO, Service)
+- Console-based user interaction
 
 ---
 
-## Problem Statement
+## 🚀 Features
 
-* The objective of this project is to design and develop a console-based Java application for managing a local farmers’ market.
-* The system supports:
-
-  * Vendor registration
-  * Stall booking for specific market days
-  * Daily sales summary tracking
-* All operations are performed using a console-based interface.
-
----
-
-## Objectives
-
-* Register and manage vendors
-* Book stalls for vendors on specific market dates
-* Prevent double booking of stalls
-* Record daily sales summary
-* View vendor and booking details
-* Safely remove vendors with no active bookings
-* Validate user inputs
-* Connect to database using JDBC
+- Vendor Registration  
+- Stall Booking  
+- Sales Summary Entry  
+- View Booking List  
+- View Vendor List  
+- Booking Conflict Detection (prevents double booking of stalls)
 
 ---
 
-## Technologies Used
-
-* Programming Language: Java
-* Database: Oracle / MySQL
-* Connectivity: JDBC
-* Concepts Used:
-
-  * Encapsulation
-  * Abstraction
-  * Inheritance
-  * Polymorphism
-* IDE: Eclipse
-* Interface: Console-based Menu System
-
----
-
-## Features
-
-### Vendor Management
-
-* Register new vendor
-* View vendor details
-* View all vendors
-* Update vendor status (ACTIVE / INACTIVE)
-* Delete vendor safely
-
-### Stall Booking
-
-* Book stall for vendor on specific market date
-* Validate vendor status before booking
-* Prevent double booking of stall and time slot
-
-### Sales Summary
-
-* Record daily sales value
-* Add sales notes
-* Mark booking as COMPLETED
-
-### Reports
-
-* List bookings by vendor
-* List bookings by market date
-
----
-
-## Database Details
-
-### Tables Used
-
-* VENDOR_TBL
-* STALL_BOOKING_TBL
-
----
-
-## Project Structure
+## 🏗 Project Structure
 
 ```plaintext
-
 LocalFarmersMarketApplication
 │
 ├── com.market.app
 │   └── MarketMain.java
 │
-├── com.market.bean
+├── com.market.entity
 │   ├── Vendor.java
-│   └── StallBooking.java
+│   ├── StallBooking.java
+│   └── SalesSummary.java
 │
 ├── com.market.dao
 │   ├── VendorDAO.java
-│   └── StallBookingDAO.java
+│   ├── StallBookingDAO.java
+│   └── SalesSummaryDAO.java
 │
 ├── com.market.service
-│   └── MarketService.java
+│   ├── VendorService.java
+│   ├── BookingService.java
+│   └── SalesService.java
 │
 ├── com.market.util
-│   ├── DBUtil.java
-│   ├── ValidationException.java
-│   ├── BookingConflictException.java
-│   └── ActiveBookingsExistException.java
-
-```
----
-
-## How to Run the Project
-
-* Open Eclipse IDE
-* Import or open the project
-* Configure database connection in DBUtil.java
-* Create required tables in database
-* Add JDBC driver to project build path
-* Run MarketMain.java
-* Use console menu to perform operations
+│   └── HibernateUtil.java
+│
+└── hibernate.cfg.xml
+````
 
 ---
 
-## Output
-```md
+## ⚙ Technologies Used
 
-The application provides the following menu options:
-
-- Main Menu  
-- Vendor Registration  
-- Stall Booking  
-- Sales Summary Entry  
-- Booking List  
-- Vendor List
-```
+* Java
+* Hibernate ORM
+* Oracle Database
+* Maven
+* Eclipse IDE
 
 ---
 
+## 🗄 Database Tables
+
+* Vendor
+* StallBooking
+* SalesSummary
+
+---
+
+## ▶ How to Run
+
+1. Clone or download the project.
+2. Open the project in Eclipse / IntelliJ IDE.
+3. Configure database details in `hibernate.cfg.xml`.
+4. Create the required tables in the database.
+5. Run `MarketMain.java`.
+6. Use the console menu to perform operations.
+
+---
+
+## 📚 Learning Outcomes
+
+* Hibernate CRUD operations
+* Entity mapping using annotations
+* SessionFactory and Transactions
+* Layered architecture (Entity → DAO → Service → Main)
+* Console-based Java application design
+
+---
+
+## 🧾 Output
+
+### 🔹 View Vendor Details
+<img src="PASTE_YOUR_FIRST_SCREENSHOT_LINK_HERE" width="650"/>
+
+<br>
+
+---
+
+### 🔹 Stall Booking & Sales Summary
+<img width="1532" height="787" alt="image" src="https://github.com/user-attachments/assets/ac7cb36b-dab0-4eaa-9cdd-78024a79bcbf" />
+
+---
 ## Student Details
 
 * Name: Nikitha S
 * Roll No: 717823P136
 
 ---
+
