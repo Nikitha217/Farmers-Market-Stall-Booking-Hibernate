@@ -1,6 +1,5 @@
 package com.market.bean;
 
-
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.sql.Date;
@@ -9,11 +8,10 @@ import java.sql.Date;
 @Table(name="STALL_BOOKING_TBL")
 public class StallBookingBean {
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name="BOOKING_ID")
-	private int bookingID;
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)   // ✅ AUTO ID
+    @Column(name="BOOKING_ID")
+    private int bookingID;
 
     @Column(name="VENDOR_ID")
     private String vendorID;
@@ -47,101 +45,101 @@ public class StallBookingBean {
     @Column(name="SALES_NOTES")
     private String salesNotes;
 
-	public int getBookingID() {
-		return bookingID;
-	}
+    // ======= GETTERS AND SETTERS =======
 
-	public void setBookingID(int bookingID) {
-		this.bookingID = bookingID;
-	}
+    public int getBookingID() {
+        return bookingID;
+    }
 
-	public String getVendorID() {
-		return vendorID;
-	}
+    public void setBookingID(int bookingID) {
+        this.bookingID = bookingID;
+    }
 
-	public void setVendorID(String vendorID) {
-		this.vendorID = vendorID;
-	}
+    public String getVendorID() {
+        return vendorID;
+    }
 
-	public Date getMarketDate() {
-		return marketDate;
-	}
+    public void setVendorID(String vendorID) {
+        this.vendorID = vendorID;
+    }
 
-	public void setMarketDate(Date marketDate) {
-		this.marketDate = marketDate;
-	}
+    public Date getMarketDate() {
+        return marketDate;
+    }
 
-	public String getStallNo() {
-		return stallNo;
-	}
+    public void setMarketDate(Date marketDate) {
+        this.marketDate = marketDate;
+    }
 
-	public void setStallNo(String stallNo) {
-		this.stallNo = stallNo;
-	}
+    public String getStallNo() {
+        return stallNo;
+    }
 
-	public String getZone() {
-		return zone;
-	}
+    public void setStallNo(String stallNo) {
+        this.stallNo = stallNo;
+    }
 
-	public void setZone(String zone) {
-		this.zone = zone;
-	}
+    public String getZone() {
+        return zone;
+    }
 
-	public String getTimeSlot() {
-		return timeSlot;
-	}
+    public void setZone(String zone) {
+        this.zone = zone;
+    }
 
-	public void setTimeSlot(String timeSlot) {
-		this.timeSlot = timeSlot;
-	}
+    public String getTimeSlot() {
+        return timeSlot;
+    }
 
-	public Date getBookingDate() {
-		return bookingDate;
-	}
+    public void setTimeSlot(String timeSlot) {
+        this.timeSlot = timeSlot;
+    }
 
-	public void setBookingDate(Date bookingDate) {
-		this.bookingDate = bookingDate;
-	}
+    public Date getBookingDate() {
+        return bookingDate;
+    }
 
-	public BigDecimal getStallFee() {
-		return stallFee;
-	}
+    public void setBookingDate(Date bookingDate) {
+        this.bookingDate = bookingDate;
+    }
 
-	public void setStallFee(BigDecimal stallFee) {
-		this.stallFee = stallFee;
-	}
+    public BigDecimal getStallFee() {
+        return stallFee;
+    }
 
-	public String getPaymentStatus() {
-		return paymentStatus;
-	}
+    public void setStallFee(BigDecimal stallFee) {
+        this.stallFee = stallFee;
+    }
 
-	public void setPaymentStatus(String paymentStatus) {
-		this.paymentStatus = paymentStatus;
-	}
+    public String getPaymentStatus() {
+        return paymentStatus;
+    }
 
-	public String getBookingStatus() {
-		return bookingStatus;
-	}
+    public void setPaymentStatus(String paymentStatus) {
+        this.paymentStatus = paymentStatus;
+    }
 
-	public void setBookingStatus(String bookingStatus) {
-		this.bookingStatus = bookingStatus;
-	}
+    public String getBookingStatus() {
+        return bookingStatus;
+    }
 
-	public BigDecimal getTotalSalesValue() {
-		return totalSalesValue;
-	}
+    public void setBookingStatus(String bookingStatus) {
+        this.bookingStatus = bookingStatus;
+    }
 
-	public void setTotalSalesValue(BigDecimal totalSalesValue) {
-		this.totalSalesValue = totalSalesValue;
-	}
+    public BigDecimal getTotalSalesValue() {
+        return totalSalesValue;
+    }
 
-	public String getSalesNotes() {
-		return salesNotes;
-	}
+    public void setTotalSalesValue(BigDecimal totalSalesValue) {
+        this.totalSalesValue = totalSalesValue;
+    }
 
-	public void setSalesNotes(String salesNotes) {
-		this.salesNotes = salesNotes;
-	}
-    
+    public String getSalesNotes() {
+        return salesNotes;
+    }
 
+    public void setSalesNotes(String salesNotes) {
+        this.salesNotes = salesNotes;
+    }
 }

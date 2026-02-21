@@ -13,6 +13,11 @@ public class MarketMain {
     private static MarketService service = new MarketService();
 
     public static void main(String[] args) {
+    	System.setProperty("org.jboss.logging.provider", "jdk");
+
+    	java.util.logging.Logger.getLogger("org.hibernate")
+
+    	        .setLevel(java.util.logging.Level.SEVERE);
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Local Farmers' Market Console");
@@ -57,17 +62,7 @@ public class MarketMain {
             System.out.print("Enter Payment Status (PAID / PENDING): ");
             String paymentStatus = sc.nextLine();
 
-            boolean ok = service.bookStall(
-                    bookVendorId,
-                    marketDate,
-                    stallNo,
-                    location,
-                    slot,
-                    bookingDate,
-                    amount,
-                    paymentStatus
-            );
-
+            boolean ok = service.bookStall(bookVendorId,marketDate,stallNo,location,slot,bookingDate,amount,paymentStatus);
             System.out.println(ok ? "STALL BOOKED SUCCESSFULLY" : "STALL BOOKING FAILED");
             System.out.println("\nRecord Sales Summary");
 

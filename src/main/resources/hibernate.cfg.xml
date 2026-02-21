@@ -11,6 +11,7 @@
 		<!-- Echo all executed SQL to stdout -->
 		<property name="hibernate.show_sql">true</property>
 		<property name="hibernate.hbm2ddl.auto">update</property>
+		
 		<!-- Enable Hibernate's automatic session context management -->
 		<property name="hibernate.current_session_context_class">thread</property>
 		<mapping class="com.market.bean.StallBookingBean"/>
