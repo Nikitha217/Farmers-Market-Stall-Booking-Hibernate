@@ -1,4 +1,4 @@
-# 🌾 Local Farmers' Market Console Application (Hibernate)
+# Local Farmers' Market Console Application (Hibernate)
 
 A Java console-based application developed using **Hibernate ORM** to manage vendors, stall bookings, and sales summaries in a local farmers' market.
 
@@ -10,7 +10,7 @@ This project demonstrates:
 
 ---
 
-## 🚀 Features
+## Features
 
 - Vendor Registration  
 - Stall Booking  
@@ -21,7 +21,7 @@ This project demonstrates:
 
 ---
 
-## 🏗 Project Structure
+## Project Structure
 
 ```plaintext
 LocalFarmersMarketApplication
@@ -52,7 +52,7 @@ LocalFarmersMarketApplication
 
 ---
 
-## ⚙ Technologies Used
+## Technologies Used
 
 * Java
 * Hibernate ORM
@@ -62,7 +62,7 @@ LocalFarmersMarketApplication
 
 ---
 
-## 🗄 Database Tables
+## Database Tables
 
 * Vendor
 * StallBooking
@@ -70,7 +70,7 @@ LocalFarmersMarketApplication
 
 ---
 
-## ▶ How to Run
+## How to Run
 
 1. Clone or download the project.
 2. Open the project in Eclipse / IntelliJ IDE.
@@ -81,7 +81,7 @@ LocalFarmersMarketApplication
 
 ---
 
-## 📚 Learning Outcomes
+## Learning Outcomes
 
 * Hibernate CRUD operations
 * Entity mapping using annotations
@@ -91,17 +91,27 @@ LocalFarmersMarketApplication
 
 ---
 
-## 🧾 Output
+## Output
 
-### 🔹 View Vendor Details
-<img src="PASTE_YOUR_FIRST_SCREENSHOT_LINK_HERE" width="650"/>
+### View Vendor Details
+<img width="1720" height="161" alt="image" src="https://github.com/user-attachments/assets/b49351ad-768f-454e-b7f0-f2729449fb42" />
+
 
 <br>
 
 ---
 
-### 🔹 Stall Booking & Sales Summary
-<img width="1532" height="787" alt="image" src="https://github.com/user-attachments/assets/ac7cb36b-dab0-4eaa-9cdd-78024a79bcbf" />
+### Stall Booking
+<img width="1718" height="298" alt="image" src="https://github.com/user-attachments/assets/cbc97d62-a556-4b9a-9dd2-ab9539eb86ae" />
+
+
+<br>
+
+---
+## Sales Summary
+<img width="1727" height="158" alt="image" src="https://github.com/user-attachments/assets/c60acb71-9334-4800-81f3-c8232bd2f7bd" />
+
+
 
 ---
 ## Student Details
